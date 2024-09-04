@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto-Forum project</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- dasi ul link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#FFF]">
+    <section class="container mx-auto ">
+        <!-- navbar session -->
+        <section>
+            <nav class="mt-6">
+
+                <div class="navbar flex justify-between bg-base-100">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 gap-4 ">
+                                <!-- icon toltip -->
+                                <div class="tooltip" data-tip="Tooltip">
+                                    <img class=" w-[30px]" src="Frame.jpg" alt="">
+                                </div>
+                                <div class="tooltip" data-tip="Tooltip">
+                                    <img class="w-[30px]" src="Frame (1).jpg" alt="">
+                                </div>
+                                <div class="tooltip" data-tip="Tooltip">
+                                    <img class="w-[30px]" src="Frame (2).jpg" alt="">
+                                </div>
+                                <div class="tooltip" data-tip="Tooltip">
+                                    <img class="w-[30px]" src="Frame (3).jpg" alt="">
+                                </div>
+                            </ul>
+                        </div>
+                        <a class=" text-3xl text-[#12132D] font-black">ReTro</a>
+                    </div>
+                    <div class="navbar-end hidden lg:flex  mr-6">
+                        <ul class="menu menu-horizontal px-1 gap-10">
+                            <!-- icon tooltip -->
+                            <div class="tooltip" data-tip="Tooltip">
+                                <img class=" w-[50px]" src="Frame.jpg" alt="">
+                            </div>
+                            <div class="tooltip" data-tip="Tooltip">
+                                <img class="w-[50px]" src="Frame (1).jpg" alt="">
+                            </div>
+                            <div class="tooltip" data-tip="Tooltip">
+                                <img class="w-[50px]" src="Frame (2).jpg" alt="">
+                            </div>
+                            <div class="tooltip" data-tip="Tooltip">
+                                <img class="w-[50px]" src="Frame (3).jpg" alt="">
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="lg:navbar-end">
+                        <a class="btn bg-[#797DFC] rounded-[50px] px-[40px] py-[18px] text-white font-bold
+                       ">Sign In</a>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <!-- banner session -->
+        <section class="bg-[#12132DFF] h-[600px] md:[550px]  flex items-center justify-center rounded-3xl">
+            <div>
+                <div class="hero">
+                    <div class="hero-content flex-col lg:flex-row ">
+                        <div class="text-white w-3/4 md:w-2/4 lg:2/4 space-y-6">
+                            <h1 class="font-black text-5xl">Welcome to the <span
+                                    class="bg-clip-text text-transparent bg-gradient-to-r from-[#797DFCFF] to-[#797DFC69]">ReTro</span>
+                                Forum</h1>
+                            <p>Share your favorite opinion and win and wp forum coffee mug!</p>
+                            <label class="input rounded-[50px]  flex items-center gap-2 text-black">
+                                <input id="search-field" type="text" class="grow p-2" placeholder="Search here anything" />
+                                <span onclick="searchHandler()" class="badge badge-info px-5 py-4">Search</span>
+                            </label>
+                        </div>
+                        <div class="w-3/4 md:w-2/4 lg:2/4 bg-white md:space-y-4 p-4 md:p-12 rounded-2xl md:text-center">
+                            <h1 class="text-2xl flex justify-between items-center ">Registered Users
+                                <span>01</span>
+                            </h1>
+                            <h1 class="text-2xl flex justify-between items-center">Froums
+                                <span>02</span>
+                            </h1>
+                            <h1 class="text-2xl flex justify-between items-center">Topics
+                                <span>03</span>
+                            </h1>
+                            <h1 class="text-2xl flex justify-between items-center">Replies
+                                <span>04</span>
+                            </h1>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Let’s Discuss session -->
+        <section class="mt-12">
+            <div class="text-center space-y-6">
+                <h2 class="text-[#12132D] font-black text-5xl">Let’s Discuss</h2>
+                <p>Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing
+                    features allow for a streamlined .</p>
+            </div>
+        </section>
+
+        <!-- Drieam card sesssion -->
+        <section class="mt-10">
+            <div class="md:flex">
+                <!-- left side first card-->
+                <div  id="allPostContainer-id" class="md:w-2/3 grid grid-cols-1 gap-6">
+                    <!-- <div class="bg-[#F3F3F5] p-6 rounded-3xl">
+
+                        
+                        <div class="avatar online mt-2">
+                            <div class="mask mask-squircle w-24">
+                                <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                            </div>
+                        </div>
+                        
+                        <div class="ml-4 mt-10">
+                            <div class="flex">
+                                <h3># Music</h3>
+                                <span class="ml-6">Author : Awlad Hossain</span>
+                            </div>
+                            <h3 class="text-[#12132D] font-bold mt-3">10 Kids Unaware of Their Halloween Costume
+                            </h3>
+                            <p class="mt-4">It’s one thing to subject yourself to ha Halloween costume mishap
+                                because, hey that’s your
+                                prerogative</p>
+                            <p class="decoration-double ... ">
+                                ..........................................................
+                            </p>
+                            
+                            <div class="flex justify-between mt-5">
+                                <div class="flex gap-6">
+                                    <img src="tabler-icon-message-2.jpg" alt="">
+                                    <img src="tabler-icon-eye.jpg" alt="">
+                                    <img src="tabler-icon-clock-hour-9.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="email 1 (1).jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div> -->
+                </div>
+
+
+                <!-- right side -->
+                <div class="flex justify-between md:w-1/3 h-[300px] border md:ml-4 mt-4 md:mt-0 bg-[#F3F3F5] rounded-2xl p-6">
+                    <h3 class="text-[#12132D] font-bold text-[20px]">Title</h3>
+                    <div class="flex">
+                        <span>
+                            <img src="Frame (4).jpg" alt="">
+                        </span>
+                        <span class="ml-4">Mark as read <span>0</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
